@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search | PraRoz</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ff6600; /* Orange color */
+        }
+
+        .search-box {
+            position: relative;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #ff6600; /* Orange color */
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #e65c00; /* Darker orange */
+        }
+
+        .results {
+            margin-top: 20px;
+        }
+
+        .result-item {
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #fafafa;
+            border-left: 4px solid #ff6600;
+        }
+
+        .result-item h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .result-item p {
+            margin: 5px 0 0 0;
+            font-size: 14px;
+            color: #666;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Search Courses or Content</h2>
+        <div class="search-box">
+            <form action="search_results.html" method="GET">
+                <input type="text" name="query" placeholder="Type to search..." required>
+                <button type="submit" class="btn">Search</button>
+            </form>
+        </div>
+
+        <div class="results">
+            <h3>Search Results:</h3>
+            <!-- Example search results -->
+            <div class="result-item">
+                <h3>Web Development Basics</h3>
+                <p>An introduction to web development using HTML, CSS, and JavaScript.</p>
+            </div>
+
+            <div class="result-item">
+                <h3>Advanced CSS Techniques</h3>
+                <p>Learn how to master CSS to create responsive and modern web designs.</p>
+            </div>
+
+            <div class="result-item">
+                <h3>JavaScript for Beginners</h3>
+                <p>A beginner-friendly course to learn JavaScript programming.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
